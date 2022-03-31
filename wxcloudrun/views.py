@@ -6,7 +6,7 @@ import paddle.nn as nn
 import paddle.nn.functional as F
 
 L = 125
-dataset = json.load(open(r'D:\三小中期答辩\唐诗.json', encoding='UTF-8'))
+dataset = json.load(open(r'/app/唐诗.json', encoding='UTF-8'))
 
 def get_allchars(dataset):
     allchars = []
@@ -131,7 +131,7 @@ def show2(acrostic, prefix=None, net=None, char2id_dict=char2id_dict, id2char_di
 
 
 net = Net()
-model_path = r'D:\三小中期答辩\net.pdparams'
+model_path = r'/app/model1627807014.4146042.pth'
 net.set_state_dict(P.load(model_path))
 # result = input("请输入续写诗的第一句:\n")
 #
@@ -170,8 +170,4 @@ def upload1():
     xuxieshi1 = show1(result=acrostic, prefix='明日何其多，总管一二三。', net = net)
     print(xuxieshi1)
     return xuxieshi1
-
-
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
 
