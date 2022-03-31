@@ -1,4 +1,3 @@
-20 大数据 王子恺 11:41:39
 import numpy as np
 import json
 import paddle
@@ -130,7 +129,7 @@ def show2(acrostic, prefix=None, net=None, char2id_dict=char2id_dict, id2char_di
 
     return ''.join(result)
 
-20 大数据 王子恺 11:41:46
+
 net = Net()
 model_path = r'D:\三小中期答辩\net.pdparams'
 net.set_state_dict(P.load(model_path))
