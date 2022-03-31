@@ -14,7 +14,7 @@ from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 import  os
 import jieba
-
+L=125
 dataset = json.load(open(r'/app/唐诗.json', encoding='UTF-8'))
 
 def get_allchars(dataset):
