@@ -152,7 +152,7 @@ xuxieshi1 = ""
 @app.route('/upload', methods=['POST'])
 def upload():
     global changtoushis
-    text = request.values.get('text')
+    text = request.form.get('text')
     print(text)
     acrostic = json.loads(text)
     print(acrostic)
@@ -163,7 +163,7 @@ def upload():
 @app.route('/upload1', methods=['POST'])
 def upload1():
     global xuxieshi1
-    text = request.values.get('text')
+    text = request.form.get('text')
     print(text)
     acrostic = json.loads(text)
     print(acrostic)
