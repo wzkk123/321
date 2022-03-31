@@ -5,6 +5,8 @@ import paddle as P
 import paddle.nn as nn
 import paddle.nn.functional as F
 import os
+from flask import Flask, request
+from flask import Flask, request
 
 @app.route('/upload', methods=['POST'])
 def upload():
